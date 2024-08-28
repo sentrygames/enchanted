@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-const nggUrl = 'https://mathsspot.com';
+const nggUrl = 'https://miniplay.com/embed/undertale-enchanted-hd-remake';
 
 const proxy = createProxyMiddleware({
   target: nggUrl,
