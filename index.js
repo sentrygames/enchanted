@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-const nggUrl = 'https://miniplay.com/embed/undertale-enchanted-hd-remake';
+const nggUrl = 'https://kdata1.com/2022/03/undetale-enchanted/';
 
 const proxy = createProxyMiddleware({
   target: nggUrl,
@@ -11,7 +11,7 @@ const proxy = createProxyMiddleware({
   secure: true,
   logLevel: 'debug',
   router: function(req) {
-    if (req.headers.host === 'miniplay.com/embed/undertale-enchanted-hd-remake') {
+    if (req.headers.host === 'kdata1.com/2022/03/undetale-enchanted/') {
       req.headers['X-Forwarded-For'] = ''; 
       req.headers['X-Real-IP'] = '';
       req.headers['Via'] = '';
