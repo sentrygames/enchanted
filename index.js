@@ -11,7 +11,7 @@ const proxy = createProxyMiddleware({
   secure: true,
   logLevel: 'debug',
   router: function(req) {
-    if (req.headers.host === 'sivsome.framer.website) {
+    if (req.headers.host === 'sivsome.framer.website') {
       req.headers['X-Forwarded-For'] = ''; 
       req.headers['X-Real-IP'] = '';
       req.headers['Via'] = '';
